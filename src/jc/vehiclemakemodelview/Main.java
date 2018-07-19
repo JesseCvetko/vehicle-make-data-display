@@ -16,6 +16,7 @@ public class Main
     {
         System.out.println("Ten people were asked to report the make" +
                 " of their primary vehicle.");
+        System.out.println("Date of Data Collection: May 28, 2018");
         VehicleMakeDisplay display = new VehicleMakeDisplay();
         display.displayData();
     }
