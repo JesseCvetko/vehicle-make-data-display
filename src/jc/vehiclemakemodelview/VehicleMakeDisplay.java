@@ -94,4 +94,21 @@ public class VehicleMakeDisplay
         displayFrequency.toString();
         System.out.println(displayFrequency);
     }
+
+    /**
+     * Display the analyzed data with numbers to show
+     * vehicle make counts
+     */
+    public void displayCounts()
+    {
+        StringBuilder displayCount = new StringBuilder();
+        displayCount.append("Counts of vehicle makes reported in poll:");
+        String[] displayVehicleMakes = new String[] {"Toyota:", "Honda:", "Dodge:", "Ford:", "Chevy:", "Other:"};
+        for (int counter = 0; counter < vehicleMakeCounts.length; counter++) {
+            displayCount.append('\n' + displayVehicleMakes[counter] + '\t'
+                    + vehicleMakeCounts[counter] + "  ");
+        }
+        displayCount.toString();
+        System.out.println(displayCount);
+    }
 } 
