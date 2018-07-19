@@ -75,4 +75,23 @@ public class VehicleMakeDisplay
         displayHistogram.toString();
         System.out.println(displayHistogram);
     }
+
+    /**
+     * Display the analyzed data as a frequency table
+     * with tally marks to show vehicle make counts
+     */
+    public void displayFrequency()
+    {
+        StringBuilder displayFrequency = new StringBuilder();
+        displayFrequency.append("Frequency of vehicle makes reported in poll:");
+        String[] displayVehicleMakes = new String[] {"Toyota:", "Honda:", "Dodge:", "Ford:", "Chevy:", "Other:"};
+        for (int counter = 0; counter < vehicleMakeCounts.length; counter++) {
+            displayFrequency.append('\n' + displayVehicleMakes[counter] + '\t');
+            for (int tally = 0; tally < vehicleMakeCounts[counter]; tally++) {
+                displayFrequency.append('|');
+            }
+        }
+        displayFrequency.toString();
+        System.out.println(displayFrequency);
+    }
 } 
