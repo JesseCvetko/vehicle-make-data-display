@@ -4,7 +4,7 @@ package jc.vehiclemakemodelview;
  * Vehicle Make Display program
  *
  * @author Jesse Cvetko
- * @version 2018.06.07
+ * @version 2018.07.19
  */
 public class Main
 {
